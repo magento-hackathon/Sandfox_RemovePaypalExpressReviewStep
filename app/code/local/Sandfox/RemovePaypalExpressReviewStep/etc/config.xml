@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Sandfox_RemovePaypalExpressReviewStep>
+            <version>0.1.0</version>
+        </Sandfox_RemovePaypalExpressReviewStep>
+    </modules>
+    <global>
+        <models>
+            <sandfox_removepaypalexpressreviewstep>
+                <class>Sandfox_RemovePaypalExpressReviewStep_Model</class>
+            </sandfox_removepaypalexpressreviewstep>
+            <paypal>
+                <rewrite>
+                    <config>Sandfox_RemovePaypalExpressReviewStep_Model_Config</config>
+                </rewrite>
+            </paypal>
+        </models>
+        <events>
+            <controller_action_predispatch_paypal_express_review>
+                <observers>
+                    <sandfox_removepaypalexpressreviewstep>
+                        <type>singleton</type>
+                        <class>sandfox_removepaypalexpressreviewstep/observer</class>
+                        <method>controllerActionPredispatchPaypalExpressReview</method>
+                    </sandfox_removepaypalexpressreviewstep>
+                </observers>
+            </controller_action_predispatch_paypal_express_review>
+        </events>
+    </global>
+</config>
