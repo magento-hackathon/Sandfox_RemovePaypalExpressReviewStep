@@ -2,7 +2,7 @@
   "name":"tim-bezhashvyly/removepaypalexpressreviewstep",
   "type":"magento-module",
   "license":"OSL-3.0",
-  "homepage":"https://github.com/tim-bezhashvyly/geoip",
+  "homepage":"https://github.com/magento-hackathon/Sandfox_RemovePaypalExpressReviewStep",
   "description":"Removes the Paypal Express Review Step from Checkout",
   "authors":[
     {
