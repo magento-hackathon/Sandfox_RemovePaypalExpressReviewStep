@@ -26,6 +26,15 @@
                     </sandfox_removepaypalexpressreviewstep>
                 </observers>
             </controller_action_predispatch_paypal_express_review>
+            <controller_action_predispatch_paypal_express_placeOrder>
+                <observers>
+                    <sandfox_removepaypalexpressreviewstep>
+                        <type>singleton</type>
+                        <class>sandfox_removepaypalexpressreviewstep/observer</class>
+                        <method>controllerActionPredispatchPaypalExpressPlaceOrder</method>
+                    </sandfox_removepaypalexpressreviewstep>
+                </observers>
+            </controller_action_predispatch_paypal_express_placeOrder>
         </events>
     </global>
 </config>
